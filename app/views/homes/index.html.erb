@@ -1,1 +1,22 @@
-<h1>Quizapp is live</h1>
+<html>
+  <head>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag   'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+
+    <div class="jumbotron">
+      <h1>Welcome to Quizapp</h1>
+        <p><h3>A magical page which is here to dazzle you with it's amazingness.</h3></p>
+
+      <div class="text-center">
+        <a class="btn btn-primary btn-lg" href="#" role="button">Click here to see an awesome web app!</a>
+      </div>
+    </div>
+
+
+    <%= yield %>
+
+  </body>
+</html>
